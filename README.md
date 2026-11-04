@@ -1,7 +1,7 @@
 # QAP an einer Mini-Halle – Streamlit-Demo
 
 <!-- TODO nach dem Deploy: direkt hierher den Live-Link setzen (Leerzeile davor und danach):
-**[→ Demo live ausprobieren](https://sebastianhanisch-qap-mini-halle-demo.streamlit.app/)** -->
+**[→ Demo live ausprobieren](https://sebastianhanisch-quadratische-zuordnung-demo.streamlit.app/)** -->
 
 Stück 1 von 15 der **Konzepte-Reihe „Anordnen: relaxieren und runden“** für die Website „Sebastian Hanisch – Operations Research und Machine Learning“ (die Reihe ist in Planung, die Konzepte-Seite gibt es noch nicht). Wie jede Konzepte-Demo dreht sich alles um **eine** Aufgabe mit wachsendem Beispiel: Bauteile mit Flüssen auf die Plätze eines Rasters. Dieses Stück ist die **Wurzel**: Es baut keinen Löser und keine Schranke, sondern zeigt die Aufgabe und ihre Tauschlandschaft **vollständig**, solange man alle Anordnungen aufzählen kann (bis neun Bauteile). Spätere Stücke bringen Schranken, Relaxationen und die Platzierung.
 

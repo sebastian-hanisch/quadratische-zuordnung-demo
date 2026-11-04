@@ -40,5 +40,5 @@ def build_pdf(s: Settings, v: dict, ls) -> bytes:
         pdf.ln()
     pdf.ln(3)
     pdf.set_font("Helvetica", "I", 8)
-    pdf.multi_cell(0, 4, _s("Quelle: qap-mini-halle-demo, Sebastian Hanisch."), new_x="LMARGIN", new_y="NEXT")
+    pdf.multi_cell(0, 4, _s("Quelle: quadratische-zuordnung-demo, Sebastian Hanisch."), new_x="LMARGIN", new_y="NEXT")
     return bytes(pdf.output())
