@@ -9,7 +9,7 @@ Stück 1 von 15 der **Konzepte-Reihe „Anordnen: relaxieren und runden“** fü
 
 Je enger zwei Bauteile sitzen, die ein Netz verbindet, desto billiger; die Kosten hängen also an **Paaren**. Das ist das **quadratische Zuordnungsproblem (QAP)**: `n` Bauteile auf `n` Plätze, gesucht ist die Anordnung mit der kleinsten Summe aus Fluss mal Abstand. Eine einfache Suche tauscht zwei Bauteile, solange es besser wird, und bleibt in einem **lokalen Optimum** stehen. Wie viele es davon gibt und wie oft ein einzelner Abstieg das Beste findet, sieht man nur, wenn man **alle** Anordnungen kennt. Die Kernfrage: **Was kann eine Tauschsuche, wenn man die ganze Landschaft sieht?**
 
-Die Heuristiken selbst (Tabu-Suche, Annealing und andere) stehen nicht hier: die Fall-Demo [Tor-Zuordnung](https://github.com/sebastian-hanisch/dock_door-demo) vergleicht sie an einem QAP mit Toren, die Linie Trajektorien-Metaheuristiken zeigt sie an einer Lieferroute. Hier geht es allein um die Landschaft kleiner Instanzen.
+Die Heuristiken selbst (Tabu-Suche, Annealing und andere) stehen nicht hier: die Fall-Demo [Tor-Zuordnung](https://github.com/sebastian-hanisch/dock-door-demo) vergleicht sie an einem QAP mit Toren, die Linie Trajektorien-Metaheuristiken zeigt sie an einer Lieferroute. Hier geht es allein um die Landschaft kleiner Instanzen.
 
 ## Modell
 
