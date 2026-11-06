@@ -12,7 +12,7 @@ def _rows(local, success, n=(4, 6, 8)):
 
 def test_growth_verdict_claims_growth_only_when_it_holds():
     kind, text = ev.verdict_growth(_rows((1.0, 6.0, 22.0), (0.9, 0.76, 0.37)))
-    assert kind == "success" and "wächst mit n und der Erfolg eines einzelnen Abstiegs sinkt" in text and "n = 6: 6 lokale Optima je Bahn, Erfolg eines Starts 76 %" in text and "24 auf 40 320" in text
+    assert kind == "success" and "Im Median wächst die Zahl der lokalen Optima mit n und der Erfolg eines einzelnen Abstiegs sinkt" in text and "n = 6: 6 lokale Optima je Bahn, Erfolg eines Starts 76 %" in text and "24 auf 40 320" in text
     kind, text = ev.verdict_growth(_rows((1.0, 6.0, 5.0), (0.9, 0.76, 0.8)))
     assert kind == "info" and "nicht gleichmäßig" in text
 

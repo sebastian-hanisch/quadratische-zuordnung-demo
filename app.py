@@ -224,11 +224,11 @@ st.markdown(
 | Annahme | Was passiert, wenn sie verletzt ist | Wer setzt an |
 |---|---|---|
 | **Es gibt nur wenige Bauteile** | Die Aufzählung wächst mit `n!`: bei zwölf Bauteilen sind es 479 001 600 Anordnungen. Die Landschaft ist dann nicht mehr vollständig zu sehen; Aussagen über lokale Optima und den Erfolg eines Abstiegs gelten nur bis `n = 9`. | spätere Stücke der Reihe (Schranken, Relaxation) |
-| **Die Familie „Netzliste“** | Alle Zahlen gelten für Netzlisten aus Dreiergruppen und Raster mit Manhattan-Abstand. Zufällige oder gruppierte Flüsse verhalten sich anders (der Erfolg eines Abstiegs liegt dort anders); die Demo misst nur diese Familie. | Stück 2 der Reihe |
+| **Die Familie „Netzliste“** | Alle Zahlen gelten für Netzlisten aus Dreiergruppen und Raster mit Manhattan-Abstand. Bei einzelnen anderen Flussfamilien (etwa zwei Cluster) liegt der Erfolg eines Abstiegs deutlich anders, bei anderen kaum (Stück 2); die Demo misst nur diese Familie. | Stück 2 der Reihe |
 | **Der Tausch zweier Bauteile ist die einzige Nachbarschaft** | Andere Nachbarschaften (drei Bauteile im Kreis, Verschieben ganzer Gruppen) haben andere lokale Optima; die Zahlen hier gelten nur für den Paartausch. | Trajektorien-Metaheuristiken |
 | **Es zählt, was die Aufzählung zeigt** | Metaheuristiken wie Tabu-Suche oder Annealing laufen weiter, wenn die Tauschsuche stehenbleibt. Wie gut sie das lösen, zeigt diese Demo nicht. | Fall-Demo Tor-Zuordnung, Trajektorien-Metaheuristiken |
 | **Gleiche Plätze, symmetrisches Raster** | Die Bahnen teilen durch die Zahl der Rasterspiegelungen (2×2 und 3×3: 8, die anderen Raster: 4). Haben zwei Bauteile genau denselben Fluss zu allen anderen, gibt es zusätzliche Gleichstände, die die Zählung je Bahn nicht erfasst. | Stück 13 (Symmetrie) |
-| **Ganzzahlige Flüsse und Abstände** | Gleichstände sind häufig; deshalb zählt die Demo schwache lokale Optima (ohne strikten Gewinn) als Hauptzahl und nennt strenge Optima getrennt. Mit reellen Flüssen wären Gleichstände selten. | – |
+| **Ganzzahlige Flüsse und Abstände** | Gleichstände sind häufig; deshalb zählt die Demo schwache lokale Optima (ohne strikten Gewinn) als Hauptzahl und nennt strenge Optima getrennt. Mit reellen Flüssen wären Gleichstände zwischen Nachbarn vermutlich selten (nicht gemessen). | – |
 """
 )
 

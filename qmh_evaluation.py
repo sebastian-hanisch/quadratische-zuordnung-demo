@@ -163,9 +163,9 @@ def verdict_growth(rows: list):
     grows = all(rows[i + 1]["local_orbits"] > rows[i]["local_orbits"] for i in range(len(rows) - 1))
     falls = all(rows[i + 1]["success"] < rows[i]["success"] for i in range(len(rows) - 1))
     parts = "; ".join(f"n = {r['n']}: {de(r['local_orbits'], 0)} lokale Optima je Bahn, Erfolg eines Starts {pct(r['success'])} ({r['seeds']} Instanzen)" for r in rows)
-    claim = ("Die Zahl der lokalen Optima wächst mit n und der Erfolg eines einzelnen Abstiegs sinkt" if grows and falls else
+    claim = ("Im Median wächst die Zahl der lokalen Optima mit n und der Erfolg eines einzelnen Abstiegs sinkt" if grows and falls else
              "Die Zahl der lokalen Optima und der Erfolg eines Abstiegs verlaufen in dieser Messung nicht gleichmäßig")
-    return ("success" if grows and falls else "info"), (f"{claim} (Median über feste Instanzen, Familie Netzliste): {parts}. Die Zahl der Anordnungen wächst von {C.n_text(first['perms'])} auf {C.n_text(last['perms'])}.")
+    return ("success" if grows and falls else "info"), (f"{claim} (Median über feste Instanzen, Familie Netzliste; die Spannen der Instanzen überlappen zwischen den Größen): {parts}. Die Zahl der Anordnungen wächst von {C.n_text(first['perms'])} auf {C.n_text(last['perms'])}.")
 
 
 def verdict_core(s: Settings, v: dict, ls: L.Landscape, d: dict):
